@@ -1,0 +1,34 @@
+{
+  "name": "max17048",
+  "version": "1.0.0",
+  "description": "Communicate with the Maxim MAX17048 Battery Fuel Gauge IC, used on the Geekworm UPS HAT board for the Raspberry Pi",
+  "main": "max17048.js",
+  "dependencies": {
+    "i2c-bus": "^4.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pilotniq/node-max17084.git"
+  },
+  "keywords": [
+    "raspberry",
+    "pi",
+    "i2c",
+    "fuel",
+    "gauge",
+    "battery",
+    "charge",
+    "ups",
+    "hat"
+  ],
+  "author": "Erland Lewin <erland@lewin.nu>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pilotniq/node-max17084/issues"
+  },
+  "homepage": "https://github.com/pilotniq/node-max17084#readme"
+}

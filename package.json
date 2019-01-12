@@ -4,7 +4,7 @@
   "description": "Communicate with the Maxim MAX17048 Battery Fuel Gauge IC, used on the Geekworm UPS HAT board for the Raspberry Pi",
   "main": "max17048.js",
   "dependencies": {
-    "i2c-bus": "^4.0.7"
+    "async-i2c-bus": "^1.1.0",
   },
   "devDependencies": {},
   "scripts": {

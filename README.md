@@ -29,11 +29,11 @@ Requires the use of the [async-i2c-bus](https://www.npmjs.com/package/async-i2c-
 ## Usage
 ```
 i2c = require('async-i2c-bus')
-Max17048 = require('./max17048');
+Max17048 = require('max17048');
 
 async function printCellVoltage( max17048 )
 {
-  console.log( "Cell voltage: " + await max17048.getCellVoltage + " V" );
+  console.log( "Cell voltage: " + await max17048.getCellVoltage() + " V" );
 }
 
 async function main()
@@ -44,8 +44,10 @@ async function main()
 
   var max17048 = new Max17048( bus )
   
-  printCellVOltage( bus );
+  printCellVoltage( max17048 );
 }
+
+main()
 ```
 
 ## API

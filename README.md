@@ -68,7 +68,7 @@ Returns the IC production version.
 Returns a dictionary keys "activeThreshold" and "hibernationThreshold". From the data sheet:
 * active threshold (volts): If at any ADC sample |OCVCELL| is greater than ActThr, the IC exits hibernate
 mode.
-• hibernate threshold (batery charge fraction per hour): If the absolute value of CRATE (charging rate) is less
+* hibernate threshold (batery charge fraction per hour): If the absolute value of CRATE (charging rate) is less
 than *hibernation threshold* for longer than 6min, the IC enters hibernate mode.
 
 ### async getAlergRange()
@@ -94,15 +94,12 @@ enabled:
 
 ### async getStatus()
 Returns a dictionary with keys and boolean values:
-* reset_indicator: "is set when the device powers up. Any time this bit is set, the IC is not 
+* *reset_indicator*: "is set when the device powers up. Any time this bit is set, the IC is not 
 configured, so the model should be loaded and the bit should be cleared."
-* voltage_high: "is set when VCELL has been above ALRT.VALRTMAX."
-* voltage_low: "is set when VCELL has been below ALRT.VALRTMIN."
-* voltage_reset: "is set after the device has been reset if EnVr [enable_voltage_reset_alert] is set.
-* "soc_low": "is set when SOC crosses the value in CONFIG.ATHD."
-* "soc_change": "(1% SOC change) is set when SOC changes by at least 1% if CONFIG.ALSC is set."
-* "enable_voltage_reset_alert": "when set to 1 asserts the ALRT pin when a voltage-reset event occurs under
-the conditions described by the VRESET/ ID register."};
-
-
-
+* *voltage_high*: "is set when VCELL has been above ALRT.VALRTMAX."
+* *voltage_low*: "is set when VCELL has been below ALRT.VALRTMIN."
+* *voltage_reset*: "is set after the device has been reset if EnVr [enable_voltage_reset_alert] is set.
+* *soc_low*: "is set when SOC crosses the value in CONFIG.ATHD."
+* *soc_change*: "(1% SOC change) is set when SOC changes by at least 1% if CONFIG.ALSC is set."
+* *enable_voltage_reset_alert*: "when set to 1 asserts the ALRT pin when a voltage-reset event occurs under
+the conditions described by the VRESET/ ID register."

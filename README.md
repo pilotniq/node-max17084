@@ -73,7 +73,7 @@ mode.
 * hibernate threshold (batery charge fraction per hour): If the absolute value of CRATE (charging rate) is less
 than *hibernation threshold* for longer than 6min, the IC enters hibernate mode.
 
-### async getAlergRange()
+### async getAlertRange()
 Returns a dictionary with keys "min" and "max", both values in volts. From the data sheet:
 > The IC alerts while VCELL > VALRT.MAX (max) or VCELL < VALRT.MIN (min)
 
